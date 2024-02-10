@@ -1,43 +1,53 @@
-## Gemini API Key Prompt Generator
+# Gemini API Answer Generator
 
-This project provides a tool for generating prompts using the Gemini API key. The prompts can be used for a variety of NLP tasks, such as text classification, sentiment analysis, and question answering.
+## Overview
 
-### Prerequisites
+This project is a tool for generating answers based on prompts using the Gemini API key. It utilizes a chaining process to gather information from the Gemini API and form responses to given prompts.
 
-* Python 3.6 or later
-* Gemini API key
+## Features
 
-### Installation
+- **Prompt-based Answer Generation**: Given a prompt, the tool interacts with the Gemini API to collect relevant data and generate an answer.
+  
+- **Chaining Process**: The tool employs a chaining process to gather additional context and refine responses, enhancing the accuracy and relevance of generated answers.
+  
+- **Customization**: Users can customize the behavior of the tool by adjusting parameters and configurations to suit their specific requirements.
 
-```
-pip install gemini-api-key-prompt-generator
-```
+## Installation
 
-### Usage
+1. Clone the repository to your local machine:
 
-```
-usage: gemini-api-key-prompt-generator [-h] [-l LENGTH] [-p PROMPT] [-k API_KEY]
+    ```bash
+    git clone https://github.com/your_username/gemini-api-answer-generator.git
+    ```
 
-Generate prompts using Gemini API key
+2. Navigate to the project directory:
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -l LENGTH, --length LENGTH
-                        Number of words in the prompt (default: 10)
-  -p PROMPT, --prompt PROMPT
-                        Seed prompt (default: "I want to write a story about")
-  -k API_KEY, --api-key API_KEY
-                        Gemini API key
-```
+    ```bash
+    cd gemini-api-answer-generator
+    ```
 
-For example, to generate a 10-word prompt about a cat, you would run the following command:
+3. Install dependencies:
 
-```
-gemini-api-key-prompt-generator -l 10 -p "I want to write a story about a cat"
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-This would generate a prompt such as "Once upon a time, there was a cat who lived in a small village."
+## Usage
 
-### Contributing
+1. Obtain Gemini API Key: Visit the Gemini website and register for an API key.
 
-Contributions are welcome! Please read the [contributing guidelines](https://github.com/huggingface/transformers/blob/master/CONTRIBUTING.md) before submitting a pull request.
+2. Configure API Key: Replace `'YOUR_API_KEY'` and `'YOUR_API_SECRET'` in the `config.py` file with your Gemini API key and secret.
+
+3. Run the tool:
+
+    ```bash
+    python answer_generator.py
+    ```
+
+4. Follow the prompts to input your query or question.
+
+5. View the generated answer.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements, new features, or bug fixes, please open an issue or submit a pull request.
