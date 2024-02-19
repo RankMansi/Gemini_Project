@@ -47,7 +47,3 @@ This project is a tool for generating answers based on prompts using the Gemini 
 4. Follow the prompts to input your query or question.
 
 5. View the generated answer.
-
-## Contributing
-
-Contributions are welcome! If you have any ideas for improvements, new features, or bug fixes, please open an issue or submit a pull request.
